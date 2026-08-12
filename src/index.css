@@ -98,6 +98,19 @@ body::before {
   .sheet { border-radius: 20px; }
 }
 
+/* Slow drift for the hero photo */
+.hero-kenburns {
+  animation: hero-kenburns 38s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes hero-kenburns {
+  from { transform: scale(1.05); }
+  to { transform: scale(1.16) translate(-1.6%, -1.2%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-kenburns { animation: none; }
+}
+
 /* Hero gradient panel */
 .hero-panel {
   background:
