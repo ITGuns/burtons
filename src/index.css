@@ -1,0 +1,189 @@
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource-variable/inter';
+@import 'tailwindcss';
+
+@theme {
+  --color-navy-950: #040318;
+  --color-navy-900: #0e0c3d;
+  --color-navy-800: #141157;
+  --color-navy-700: #1a1678;
+  --color-navy-600: #201b96;
+  --color-royal-700: #171082;
+  --color-royal-600: #1e15aa;
+  --color-royal-500: #3629d1;
+  --color-electric-400: #5a52e8;
+  --color-electric-300: #918df3;
+  --color-brand-red-600: #b2010a;
+  --color-brand-red-500: #d1121d;
+  --color-frost-50: #f4f4fd;
+  --color-frost-100: #ebecfa;
+  --color-frost-200: #dbdcf6;
+  --color-page: #dedcf6;
+
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-pulse-ring: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes pulse-ring {
+    0% { transform: scale(0.6); opacity: 0.8; }
+    100% { transform: scale(2.2); opacity: 0; }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keep the sheet pinned — no page-level bounce/scroll-chaining past the top */
+  overscroll-behavior-y: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-page);
+  color: var(--color-navy-900);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  /* body's overflow propagates to the viewport, so the viewport reads
+     overscroll-behavior from body too — html alone is ignored here */
+  overscroll-behavior-y: none;
+}
+
+/* Viewport-pinned page wash echoing the logo: red flame glow top-left,
+   royal-blue field top-right, blue swoosh sweeping up from the bottom.
+   Pseudo-element instead of background-attachment: fixed (ignored on iOS). */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(900px 520px at 8% -6%, rgba(178, 1, 10, 0.18), transparent 55%),
+    radial-gradient(1150px 600px at 92% -8%, rgba(30, 21, 170, 0.28), transparent 62%),
+    radial-gradient(1300px 760px at 50% 112%, rgba(54, 41, 209, 0.24), transparent 66%),
+    linear-gradient(160deg, #dedcf6 0%, #e4e2f6 45%, #d9d7f2 100%);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* The floating white "sheet" that holds the whole page (reference style) */
+.sheet {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbff 55%, #f6f7fe 100%);
+  border-radius: 32px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 24px 80px -32px rgba(14, 12, 61, 0.18);
+}
+
+@media (max-width: 640px) {
+  .sheet { border-radius: 20px; }
+}
+
+/* Hero gradient panel */
+.hero-panel {
+  background:
+    linear-gradient(180deg, rgba(14, 12, 61, 0.5) 0%, rgba(14, 12, 61, 0.18) 100px, transparent 170px),
+    radial-gradient(900px 520px at 72% 42%, rgba(145, 141, 243, 0.5), transparent 62%),
+    radial-gradient(700px 500px at 18% 85%, rgba(14, 12, 61, 0.55), transparent 65%),
+    linear-gradient(135deg, #171082 0%, #1e15aa 38%, #3629d1 68%, #a9a6f2 100%);
+}
+
+/* Soft tile for grids */
+.tile {
+  background: linear-gradient(180deg, #f6f7fe 0%, #eeeffb 100%);
+  border: 1px solid rgba(14, 12, 61, 0.06);
+}
+
+/* Frosted light glass */
+.glass-light {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(14, 12, 61, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Glass over dark/gradient imagery (hero nav, chips) */
+.glass-dark {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Thin arc rings background ornament */
+.rings {
+  background-image:
+    radial-gradient(circle at 50% 0%, transparent 39.8%, rgba(14, 12, 61, 0.05) 40%, transparent 40.4%),
+    radial-gradient(circle at 50% 0%, transparent 55.8%, rgba(14, 12, 61, 0.04) 56%, transparent 56.4%),
+    radial-gradient(circle at 50% 0%, transparent 71.8%, rgba(54, 41, 209, 0.06) 72%, transparent 72.4%);
+}
+
+/* Animated underline for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: linear-gradient(90deg, var(--color-royal-500), var(--color-royal-600));
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--color-page); }
+::-webkit-scrollbar-thumb {
+  background: #c6c8e9;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-royal-500); }
+
+::selection {
+  background: var(--color-royal-500);
+  color: #fff;
+}
+
+/* Admin theme (unchanged light chrome) */
+.admin-theme {
+  color-scheme: light;
+  font-family: var(--font-body);
+}
+
+.ba-handle {
+  touch-action: none;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='time']::-webkit-calendar-picker-indicator {
+  filter: none;
+}
