@@ -112,7 +112,7 @@ export default function Leads() {
                   <div className="mt-3 pl-1 space-y-2">
                     {l.notes.map((n, i) => (
                       <p key={i} className="text-xs text-slate-500 bg-slate-50 rounded-lg px-3 py-2">
-                        {n.text} <span className="text-slate-300">— {n.author}</span>
+                        {n.text} <span className="text-slate-300">· {n.author}</span>
                       </p>
                     ))}
                     {noteFor === l.id && (

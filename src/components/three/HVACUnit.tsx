@@ -76,7 +76,7 @@ export default function HVACUnit({ reduced = false }: { reduced?: boolean }) {
     [],
   )
 
-  // Louver slats around the cabinet — instanced for performance.
+  // Louver slats around the cabinet, instanced for performance.
   const louvers = useMemo(() => {
     const items: { pos: [number, number, number]; rotY: number }[] = []
     const sides = [

@@ -15,7 +15,7 @@ const POINTS = [
   { icon: BadgeCheck, title: 'Free estimates & consultations', body: 'Honest assessments and free estimates for every project.' },
   { icon: Users, title: 'Customer-first service', body: 'Straightforward communication and service built around your schedule.' },
   { icon: Home, title: 'Residential & commercial', body: 'One team for houses, offices, retail and light commercial systems.' },
-  { icon: MapPin, title: 'Local Baton Rouge service', body: 'A local company that knows Louisiana heat — and Louisiana humidity.' },
+  { icon: MapPin, title: 'Local Baton Rouge service', body: 'A local company that knows Louisiana heat, and Louisiana humidity.' },
 ]
 
 export default function WhySection() {

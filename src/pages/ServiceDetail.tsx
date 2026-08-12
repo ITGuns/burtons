@@ -78,7 +78,7 @@ export default function ServiceDetail() {
           ))}
           <div className="rounded-2xl p-6 bg-gradient-to-b from-[#fbe7e8] to-[#f8d0d2]">
             <p className="font-display text-xs tracking-[0.2em] uppercase text-brand-red-600 mb-2">Emergency?</p>
-            <p className="text-sm text-navy-900/70 mb-4">System down? Don&apos;t wait — call now.</p>
+            <p className="text-sm text-navy-900/70 mb-4">System down? Don&apos;t wait, call now.</p>
             <a href={BUSINESS.phoneHref} className="font-display font-semibold text-navy-900 text-lg hover:text-brand-red-600 transition-colors">
               {BUSINESS.phone}
             </a>

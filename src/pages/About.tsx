@@ -19,7 +19,7 @@ export default function About() {
       <PageHeader
         eyebrow="About us"
         title={'Built on\nreliability.'}
-        description={`${BUSINESS.name} — a local ${BUSINESS.city} heating and cooling team with more than 13 years of hands-on industry experience.`}
+        description={`${BUSINESS.name}, a local ${BUSINESS.city} heating and cooling team with more than 13 years of hands-on industry experience.`}
       />
       <div className="max-w-6xl mx-auto px-6 py-16 pb-24">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -27,7 +27,7 @@ export default function About() {
             <div className="space-y-6 text-navy-900/70 leading-relaxed text-lg">
               <p>
                 We believe HVAC service should be straightforward, transparent and dependable. That philosophy
-                is in our name — and it shapes every install, repair and maintenance visit we make.
+                is in our name, and it shapes every install, repair and maintenance visit we make.
               </p>
               <p>
                 From our home base at {BUSINESS.address.split(',')[0]} in {BUSINESS.city}, we serve homeowners
@@ -63,7 +63,7 @@ export default function About() {
             <Reveal delay={0.3} className="col-span-2">
               <div className="rounded-[24px] p-7 bg-gradient-to-b from-[#e0e0fa] to-[#cbcaf6] border-l-2 border-l-brand-red-500">
                 <p className="font-display text-lg text-navy-900 leading-relaxed font-light">
-                  “Reliable. Honest. Friendly. That&apos;s not a slogan — it&apos;s the standard for every visit.”
+                  “Reliable. Honest. Friendly. That&apos;s not a slogan, it&apos;s the standard for every visit.”
                 </p>
               </div>
             </Reveal>

@@ -79,7 +79,7 @@ export default function Contact() {
             ) : (
               <form onSubmit={submit} noValidate className="space-y-5">
                 <h2 className="font-display text-xl font-medium text-navy-900 mb-1">Send a message</h2>
-                <p className="text-sm text-navy-900/50">Questions, estimates, anything — we answer fast.</p>
+                <p className="text-sm text-navy-900/50">Questions, estimates, anything, we answer fast.</p>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <input aria-label="Your name" className={inputCls('name')} placeholder="Your name" value={form.name}

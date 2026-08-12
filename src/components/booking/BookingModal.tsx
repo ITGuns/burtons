@@ -12,7 +12,7 @@ const URGENCIES: { value: Urgency; label: string; hint: string }[] = [
   { value: 'ROUTINE', label: 'Routine', hint: 'Within a week or two' },
   { value: 'SOON', label: 'Soon', hint: 'In the next few days' },
   { value: 'URGENT', label: 'Urgent', hint: 'As soon as possible' },
-  { value: 'EMERGENCY', label: 'Emergency', hint: 'System down — call us too!' },
+  { value: 'EMERGENCY', label: 'Emergency', hint: 'System down? Call us too!' },
 ]
 
 const TIME_SLOTS = ['Morning (8–11 AM)', 'Midday (11 AM–2 PM)', 'Afternoon (2–6 PM)', 'Saturday morning', 'Flexible']

@@ -6,13 +6,13 @@ import { BUSINESS } from '../lib/constants'
 import { useSEO } from '../lib/useSEO'
 import { useStore } from '../store/useStore'
 
-/** /book — opens the booking modal immediately and offers a fallback CTA. */
+/** /book, opens the booking modal immediately and offers a fallback CTA. */
 export default function Book() {
   const openBooking = useStore((s) => s.openBooking)
   useSEO({
     title: "Request HVAC Service | Book Online | Burton's Reliable | Baton Rouge",
     description:
-      'Request HVAC service online with Burton\'s Reliable Heating and Air Conditioning in Baton Rouge. Free estimates — or call (225) 603-2253.',
+      'Request HVAC service online with Burton\'s Reliable Heating and Air Conditioning in Baton Rouge. Free estimates, or call (225) 603-2253.',
   })
 
   useEffect(() => {

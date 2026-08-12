@@ -163,7 +163,7 @@ export async function createBooking(input: NewBookingInput): Promise<Booking> {
   })
   await pushNotification({
     title: 'New service request',
-    body: `${booking.customer_name} — ${booking.service} (${booking.booking_ref})`,
+    body: `${booking.customer_name}, ${booking.service} (${booking.booking_ref})`,
     link: '/admin/bookings',
   })
   return booking

@@ -16,7 +16,7 @@ export default function ServiceAreaSection() {
             align="left"
             eyebrow="Where we work"
             title={'Baton Rouge.\nCovered.'}
-            description={`${BUSINESS.shortName} proudly serves ${BUSINESS.city}, ${BUSINESS.state} and the surrounding area — residential and commercial, from ${BUSINESS.address.split(',')[0]}.`}
+            description={`${BUSINESS.shortName} proudly serves ${BUSINESS.city}, ${BUSINESS.state} and the surrounding area, residential and commercial, from ${BUSINESS.address.split(',')[0]}.`}
           />
           <Reveal delay={0.15}>
             <div className="flex flex-wrap gap-3 mb-10 -mt-4">
@@ -30,7 +30,7 @@ export default function ServiceAreaSection() {
               ))}
             </div>
             <p className="text-sm text-navy-900/50 mb-8">
-              Not sure if we reach you? Send a request — we&apos;ll confirm availability at your address.
+              Not sure if we reach you? Send a request, we&apos;ll confirm availability at your address.
             </p>
             <Button size="lg" onClick={() => openBooking()}>
               Check Service Availability
@@ -42,7 +42,7 @@ export default function ServiceAreaSection() {
           <div className="relative aspect-square max-w-lg mx-auto rounded-[28px] overflow-hidden bg-frost-100 shadow-[0_30px_70px_-32px_rgba(23,16,130,0.4)]">
             <iframe
               src={`https://www.google.com/maps?q=${encodeURIComponent(BUSINESS.address)}&z=12&output=embed`}
-              title={`Google map — ${BUSINESS.shortName}, ${BUSINESS.address}`}
+              title={`Google map, ${BUSINESS.shortName}, ${BUSINESS.address}`}
               className="absolute inset-0 w-full h-full border-0"
               style={{ filter: 'saturate(0.85)' }}
               loading="lazy"

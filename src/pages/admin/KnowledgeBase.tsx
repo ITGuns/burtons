@@ -68,7 +68,7 @@ export default function KnowledgeBase() {
           </div>
           <textarea
             className={adminInput} rows={6}
-            placeholder="Article content — the chatbot quotes this text to customers."
+            placeholder="Article content, the chatbot quotes this text to customers."
             value={editing.content}
             onChange={(e) => setEditing((s) => s && { ...s, content: e.target.value })}
             aria-label="Article content"
@@ -100,7 +100,7 @@ export default function KnowledgeBase() {
         {articles.length === 0 ? (
           <EmptyState
             title="No articles yet"
-            body="Add FAQs, service info and policies — the chatbot will use them to answer customers."
+            body="Add FAQs, service info and policies, the chatbot will use them to answer customers."
           />
         ) : (
           <div className="divide-y divide-slate-50">
@@ -119,7 +119,7 @@ export default function KnowledgeBase() {
                   onClick={() => saveKB({ ...a, published: !a.published })}
                   className="p-2 rounded-lg text-slate-400 hover:bg-slate-100 transition-colors cursor-pointer"
                   aria-label={a.published ? 'Unpublish' : 'Publish'}
-                  title={a.published ? 'Published — click to unpublish' : 'Unpublished — click to publish'}
+                  title={a.published ? 'Published, click to unpublish' : 'Unpublished, click to publish'}
                 >
                   {a.published ? <Eye className="w-4 h-4 text-emerald-500" /> : <EyeOff className="w-4 h-4" />}
                 </button>

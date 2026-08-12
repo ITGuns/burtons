@@ -10,7 +10,7 @@ export const FAQS: FAQ[] = [
   },
   {
     q: 'Do you offer free estimates?',
-    a: 'Yes — we offer free estimates and consultations, with transparent pricing and no hidden fees.',
+    a: 'Yes, we offer free estimates and consultations, with transparent pricing and no hidden fees.',
   },
   {
     q: 'Do you handle both residential and commercial work?',

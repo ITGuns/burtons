@@ -3,7 +3,7 @@ import { RoundedBox } from '@react-three/drei'
 import * as THREE from 'three'
 
 /**
- * Satellite equipment for the hero scene — a wall-mount mini-split head and a
+ * Satellite equipment for the hero scene, a wall-mount mini-split head and a
  * smart thermostat puck. Procedural like HVACUnit; no external assets.
  */
 

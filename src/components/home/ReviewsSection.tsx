@@ -3,22 +3,22 @@ import SectionHeading from '../ui/SectionHeading'
 import Reveal from '../ui/Reveal'
 
 /**
- * PLACEHOLDER testimonials — clearly marked for replacement.
+ * PLACEHOLDER testimonials, clearly marked for replacement.
  * Swap these with verified customer reviews (Google/Facebook/Angi) before launch.
  */
 const PLACEHOLDER_REVIEWS = [
   {
-    name: 'Placeholder — replace with verified review',
+    name: 'Placeholder, replace with verified review',
     service: 'AC Repair',
     text: 'Example testimonial layout. Replace this card with a real, verified customer review from Google, Facebook or Angi before launch.',
   },
   {
-    name: 'Placeholder — replace with verified review',
+    name: 'Placeholder, replace with verified review',
     service: 'HVAC Installation',
     text: 'Example testimonial layout. Replace this card with a real, verified customer review from Google, Facebook or Angi before launch.',
   },
   {
-    name: 'Placeholder — replace with verified review',
+    name: 'Placeholder, replace with verified review',
     service: 'Maintenance',
     text: 'Example testimonial layout. Replace this card with a real, verified customer review from Google, Facebook or Angi before launch.',
   },
@@ -31,7 +31,7 @@ export default function ReviewsSection() {
         <SectionHeading
           eyebrow="Word of mouth"
           title={'Trusted By\nBaton Rouge'}
-          description="Real reviews from real customers. (Placeholder cards below — connect verified reviews before launch.)"
+          description="Real reviews from real customers. (Placeholder cards below, connect verified reviews before launch.)"
         />
         <div className="grid md:grid-cols-3 gap-5">
           {PLACEHOLDER_REVIEWS.map((r, i) => (

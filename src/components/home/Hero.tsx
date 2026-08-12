@@ -70,7 +70,7 @@ export default function Hero({ content }: { content: SiteContent }) {
     return () => clearTimeout(failsafe)
   }, [hasWebGL])
 
-  // Simulated progress (interval-based — keeps ticking when rAF is throttled).
+  // Simulated progress (interval-based, keeps ticking when rAF is throttled).
   useEffect(() => {
     if (!hasWebGL || bootDone) return
     const t0 = performance.now()
@@ -93,7 +93,7 @@ export default function Hero({ content }: { content: SiteContent }) {
 
   useEffect(() => {
     if (!bootDone || !root.current) return
-    // Hidden/background tab: rAF (and therefore GSAP) is suspended — show content directly.
+    // Hidden/background tab: rAF (and therefore GSAP) is suspended, show content directly.
     if (document.hidden || reduced) return
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })

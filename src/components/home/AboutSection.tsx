@@ -8,7 +8,7 @@ import Logo from '../layout/Logo'
 gsap.registerPlugin(ScrollTrigger)
 
 const PARAGRAPH =
-  "We at Burton's Reliable Heating and Air Conditioning aim to prove that honest HVAC companies still exist. It's an honor to be trusted and invited into your home — and we'll do everything we can to impress you."
+  "We at Burton's Reliable Heating and Air Conditioning aim to prove that honest HVAC companies still exist. It's an honor to be trusted and invited into your home, and we'll do everything we can to impress you."
 
 const CHIPS = [
   { icon: Snowflake, cls: 'left-[4%] top-[18%] from-electric-300/60 to-royal-500/50 rotate-[-8deg]' },

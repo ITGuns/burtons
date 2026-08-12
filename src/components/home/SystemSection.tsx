@@ -32,7 +32,7 @@ export default function SystemSection() {
         <SectionHeading
           eyebrow="System intelligence"
           title={'Know Your\nSystem'}
-          description="Tap the glowing points to explore how a complete HVAC system keeps your home comfortable — the same components our technicians install, maintain and repair every day."
+          description="Tap the glowing points to explore how a complete HVAC system keeps your home comfortable. Our technicians install, maintain and repair these same components every day."
         />
 
         <div className="grid lg:grid-cols-[1fr_340px] gap-6 items-stretch">

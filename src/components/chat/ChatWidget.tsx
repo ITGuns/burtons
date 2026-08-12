@@ -98,7 +98,7 @@ export default function ChatWidget() {
             transition={{ delay: 0.2 }}
             onClick={() => setOpen(true)}
             className="fixed bottom-6 right-6 z-[65] flex items-center gap-3 rounded-full bg-brand-red-500 hover:bg-brand-red-600 text-white pl-4 pr-5 py-3.5 shadow-[0_8px_32px_rgba(209,18,29,0.4)] transition-all hover:scale-105 cursor-pointer"
-            aria-label="Open chat — Need HVAC help?"
+            aria-label="Open chat, Need HVAC help?"
           >
             <MessageCircle className="w-5 h-5" />
             <span className="font-display text-sm font-semibold hidden sm:inline">Need HVAC help?</span>
@@ -140,7 +140,7 @@ export default function ChatWidget() {
                   <div className="bg-frost-100 rounded-2xl rounded-tl-md px-4 py-3 max-w-[85%]">
                     <p className="text-sm text-navy-900/80 leading-relaxed">
                       Hi! 👋 I&apos;m the {BUSINESS.shortName} assistant. Ask me about our services, hours,
-                      or how to book — or tap a question below.
+                      or how to book, or tap a question below.
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -199,7 +199,7 @@ export default function ChatWidget() {
                 >
                   <div className="p-4 space-y-3 bg-frost-50">
                     <p className="text-xs text-navy-900/60">
-                      Leave your name and phone/email — a representative will get back to you.
+                      Leave your name and phone/email, a representative will get back to you.
                     </p>
                     <input
                       className="w-full rounded-xl bg-white border border-navy-900/10 px-3.5 py-2.5 text-sm text-navy-900 placeholder:text-navy-900/35 focus:outline-none focus:border-royal-500"

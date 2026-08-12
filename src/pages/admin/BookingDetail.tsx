@@ -43,7 +43,7 @@ export default function BookingDetail() {
     await updateBooking(booking.id, { status })
     await pushNotification({
       title: `Booking ${status.toLowerCase().replace('_', ' ')}`,
-      body: `${booking.booking_ref} — ${booking.customer_name} (${booking.service})`,
+      body: `${booking.booking_ref}, ${booking.customer_name} (${booking.service})`,
       link: `/admin/bookings/${booking.id}`,
     })
     toast({ title: `Status updated to ${status.replace('_', ' ')}`, tone: 'success' })

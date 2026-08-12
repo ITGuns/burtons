@@ -54,7 +54,7 @@ export default function ContentPage() {
       <div className="flex items-center gap-3">
         <div className="mr-auto">
           <h2 className="font-display text-2xl font-bold text-slate-900">Site Content</h2>
-          <p className="text-sm text-slate-500 mt-1">Edit public website copy — changes go live instantly.</p>
+          <p className="text-sm text-slate-500 mt-1">Edit public website copy, changes go live instantly.</p>
         </div>
         <button
           onClick={save} disabled={saving}

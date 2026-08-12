@@ -72,7 +72,7 @@ export default function Analytics() {
     <div className="space-y-5">
       <h2 className="font-display text-2xl font-bold text-slate-900">Analytics</h2>
       <p className="text-sm text-slate-500 -mt-3">
-        All metrics are computed from real stored data — nothing simulated.
+        All metrics are computed from real stored data, nothing simulated.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

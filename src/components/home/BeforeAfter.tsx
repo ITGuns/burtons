@@ -10,7 +10,7 @@ interface Comparison {
   after: { title: string; visual: React.ReactNode }
 }
 
-/** Stylized SVG "system state" visuals — replaced by real job photos when available. */
+/** Stylized SVG "system state" visuals, replaced by real job photos when available. */
 function SystemVisual({ good }: { good: boolean }) {
   return (
     <svg viewBox="0 0 400 260" className="w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -148,7 +148,7 @@ export default function BeforeAfter() {
         <SectionHeading
           eyebrow="The difference"
           title={<>Before. After.{'\n'}<span className="text-brand-red-600">Burton&rsquo;s.</span></>}
-          description="Drag the sliders to see what professional service does for a system — cleaner equipment, better airflow, lower bills."
+          description="Drag the sliders to see what professional service does for a system, cleaner equipment, better airflow, lower bills."
         />
         <div className="grid md:grid-cols-2 gap-6">
           {COMPARISONS.map((c, i) => (

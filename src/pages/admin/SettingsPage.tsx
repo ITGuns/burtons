@@ -22,10 +22,10 @@ export default function SettingsPage() {
       <Card className="p-6">
         <h3 className="font-display font-bold text-slate-800 mb-3">Backend</h3>
         {isSupabaseConfigured ? (
-          <p className="text-sm text-emerald-600 font-semibold">✓ Supabase connected — data, auth and realtime are live.</p>
+          <p className="text-sm text-emerald-600 font-semibold">✓ Supabase connected: data, auth and realtime are live.</p>
         ) : (
           <div className="text-sm text-slate-600 space-y-2 leading-relaxed">
-            <p className="text-amber-600 font-semibold">Demo mode — data is stored in this browser only.</p>
+            <p className="text-amber-600 font-semibold">Demo mode: data is stored in this browser only.</p>
             <p>To go to production:</p>
             <ol className="list-decimal list-inside space-y-1 text-slate-500">
               <li>Create a Supabase project and run <code className="text-xs bg-slate-100 rounded px-1.5 py-0.5">supabase/migrations/001_init.sql</code></li>
@@ -49,9 +49,9 @@ export default function SettingsPage() {
       <Card className="p-6">
         <h3 className="font-display font-bold text-slate-800 mb-3">Roles</h3>
         <ul className="text-sm text-slate-600 space-y-1.5">
-          <li><b>SUPER ADMIN</b> — full access including settings</li>
-          <li><b>ADMIN</b> — bookings, leads, conversations, knowledge base, content, analytics</li>
-          <li><b>STAFF</b> — dashboard, assigned bookings, calendar, customers</li>
+          <li><b>SUPER ADMIN</b>: full access including settings</li>
+          <li><b>ADMIN</b>: bookings, leads, conversations, knowledge base, content, analytics</li>
+          <li><b>STAFF</b>: dashboard, assigned bookings, calendar, customers</li>
         </ul>
       </Card>
     </div>

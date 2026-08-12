@@ -20,7 +20,7 @@ export default function FinancingSection() {
             </h2>
             <p className="mt-6 text-white/75 leading-relaxed max-w-lg">
               A new HVAC system is a major investment. Financing options are available so you don&apos;t have to
-              choose between comfort and budget — contact us for current terms and options for your project.
+              choose between comfort and budget. Contact us for current terms and options for your project.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link to="/financing">
@@ -38,7 +38,7 @@ export default function FinancingSection() {
             {[
               { icon: FileCheck, title: 'Free estimate first', body: 'Every financing conversation starts with a free, transparent estimate.' },
               { icon: CreditCard, title: 'Options for your budget', body: 'Ask about available financing for installations and major repairs.' },
-              { icon: PhoneCall, title: 'Straight answers', body: `Call ${BUSINESS.phone} — we'll walk you through what's available.` },
+              { icon: PhoneCall, title: 'Straight answers', body: `Call ${BUSINESS.phone}, we'll walk you through what's available.` },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 0.1}>
                 <div className="glass-dark rounded-2xl p-5 flex items-start gap-4">

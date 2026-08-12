@@ -39,7 +39,7 @@ export const SYSTEM_PARTS: SystemPart[] = [
     id: 'refrigerant',
     label: 'Refrigerant Lines',
     title: 'REFRIGERANT LINES',
-    description: 'Copper lines that carry refrigerant between the outdoor and indoor units — the system’s circulatory system.',
+    description: 'Copper lines that carry refrigerant between the outdoor and indoor units, the system’s circulatory system.',
     position: [-0.9, 0.55, 1.1],
   },
 ]

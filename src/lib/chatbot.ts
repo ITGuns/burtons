@@ -10,7 +10,7 @@ import { listKB } from './db'
 import type { KBArticle } from './types'
 
 const FALLBACK =
-  "I don't have that information yet. I can connect you with Burton's Reliable — tap “Talk to a representative” below, or call (225) 603-2253."
+  "I don't have that information yet. I can connect you with Burton's Reliable. Tap “Talk to a representative” below, or call (225) 603-2253."
 
 interface Intent {
   keywords: string[]
@@ -31,12 +31,12 @@ const INTENTS: Intent[] = [
   {
     keywords: ['price', 'cost', 'how much', 'charge', 'rate', 'fee', 'quote'],
     answer: () =>
-      `Every job is different, so I can't quote exact pricing here — but Burton's Reliable offers free estimates and consultations with transparent pricing and no hidden fees. Call ${BUSINESS.phone} or use the Request Service button for a free estimate.`,
+      `Every job is different, so I can't quote exact pricing here, but Burton's Reliable offers free estimates and consultations with transparent pricing and no hidden fees. Call ${BUSINESS.phone} or use the Request Service button for a free estimate.`,
   },
   {
     keywords: ['free estimate', 'estimate', 'consultation'],
     answer: () =>
-      `Yes — we offer free estimates and consultations. Use the Request Service button or call ${BUSINESS.phone} to schedule yours.`,
+      `Yes, we offer free estimates and consultations. Use the Request Service button or call ${BUSINESS.phone} to schedule yours.`,
   },
   {
     keywords: ['area', 'baton rouge', 'where', 'location', 'serve', 'address'],
@@ -56,12 +56,12 @@ const INTENTS: Intent[] = [
   {
     keywords: ['financ', 'payment plan', 'pay over time', 'afford'],
     answer: () =>
-      `Financing options are available. I don't have the specific terms here — call ${BUSINESS.phone} and the team will walk you through current financing for your project.`,
+      `Financing options are available. I don't have the specific terms here, call ${BUSINESS.phone} and the team will walk you through current financing for your project.`,
   },
   {
     keywords: ['book', 'appointment', 'request', 'schedule a', 'sign up', 'come out'],
     answer: () =>
-      `Easy — tap the “Request Service” button (top right, or anywhere on the site), fill in your details, and Burton's Reliable will contact you shortly. Prefer the phone? Call ${BUSINESS.phone}.`,
+      `Easy, tap the “Request Service” button (top right, or anywhere on the site), fill in your details, and Burton's Reliable will contact you shortly. Prefer the phone? Call ${BUSINESS.phone}.`,
   },
   {
     keywords: ['experience', 'how long', 'years', 'qualified', 'trust'],
@@ -76,7 +76,7 @@ const INTENTS: Intent[] = [
   {
     keywords: ['commercial', 'business', 'office', 'store'],
     answer: () =>
-      `Yes — we service commercial properties as well as homes: installation, maintenance, diagnostics and repairs. Request a free consultation via the Request Service button or call ${BUSINESS.phone}.`,
+      `Yes, we service commercial properties as well as homes: installation, maintenance, diagnostics and repairs. Request a free consultation via the Request Service button or call ${BUSINESS.phone}.`,
   },
   {
     keywords: ['maintenance', 'tune', 'filter', 'checkup', 'winteriz'],
@@ -121,7 +121,7 @@ export async function botReply(userText: string): Promise<string> {
     const hit = searchKB(userText, kb)
     if (hit) return hit
   } catch {
-    /* KB unavailable — fall through */
+    /* KB unavailable, fall through */
   }
 
   return FALLBACK

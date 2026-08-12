@@ -139,7 +139,7 @@ export default function AdminLayout() {
             </h1>
             {session.demo && (
               <span className="hidden sm:inline text-[11px] bg-amber-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1">
-                Demo mode — connect Supabase for production data
+                Demo mode, connect Supabase for production data
               </span>
             )}
             <div className="ml-auto relative">

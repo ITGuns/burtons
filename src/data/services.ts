@@ -7,7 +7,7 @@ export const SERVICES: ServiceDef[] = [
     short: 'Complete comfort systems for homes and businesses.',
     headline: 'ONE TEAM. EVERY SYSTEM.',
     description:
-      "From single-family homes to commercial properties across Baton Rouge, Burton's Reliable services, installs and maintains complete heating and cooling systems — sized correctly, installed cleanly, and backed by 13+ years of hands-on experience.",
+      "From single-family homes to commercial properties across Baton Rouge, Burton's Reliable services, installs and maintains complete heating and cooling systems, sized correctly, installed cleanly, and backed by 13+ years of hands-on experience.",
     bullets: ['Residential systems', 'Commercial systems', 'System sizing & consultation', 'Free estimates'],
     icon: 'Building2',
   },
@@ -17,7 +17,7 @@ export const SERVICES: ServiceDef[] = [
     short: 'Precision installs for full comfort systems.',
     headline: 'INSTALLED RIGHT. FROM DAY ONE.',
     description:
-      'A comfort system is only as good as its installation. We handle complete HVAC installations — equipment selection, sizing, placement, and clean professional workmanship — with transparent pricing and no surprises.',
+      'A comfort system is only as good as its installation. We handle complete HVAC installations, equipment selection, sizing, placement, and clean professional workmanship, with transparent pricing and no surprises.',
     bullets: ['Full system installation', 'Equipment consultation', 'Transparent pricing', 'Free estimates'],
     icon: 'Wrench',
   },
@@ -47,7 +47,7 @@ export const SERVICES: ServiceDef[] = [
     short: 'Modern, efficient furnace systems.',
     headline: 'MODERN HEAT. PROFESSIONALLY INSTALLED.',
     description:
-      'Whether you are replacing an aging furnace or installing new equipment, we handle furnace installation from selection through commissioning — done right the first time.',
+      'Whether you are replacing an aging furnace or installing new equipment, we handle furnace installation from selection through commissioning, done right the first time.',
     bullets: ['Furnace replacement', 'New installation', 'Equipment guidance', 'Free estimates'],
     icon: 'ThermometerSun',
   },
@@ -77,14 +77,14 @@ export const SERVICES: ServiceDef[] = [
     short: 'Fast response when comfort fails.',
     headline: 'WHEN COMFORT STOPS, WE GET IT MOVING AGAIN.',
     description:
-      "HVAC failures never wait for a convenient time. Burton's Reliable offers emergency HVAC service for Baton Rouge homes and businesses — call (225) 603-2253 and we'll get your system moving again.",
+      "HVAC failures never wait for a convenient time. Burton's Reliable offers emergency HVAC service for Baton Rouge homes and businesses, call (225) 603-2253 and we'll get your system moving again.",
     bullets: ['Emergency response', 'Rapid diagnostics', 'Honest assessment', 'Call (225) 603-2253'],
     icon: 'Siren',
   },
   {
     slug: 'hvac-diagnostics',
     title: 'HVAC Diagnostics',
-    short: 'Find the real problem — fast.',
+    short: 'Find the real problem, fast.',
     headline: 'PRECISION DIAGNOSTICS. HONEST ANSWERS.',
     description:
       'Strange noises, weak airflow, rising bills? Our diagnostic process pinpoints exactly what is wrong with your system, and we explain it in plain language with transparent pricing before any work begins.',

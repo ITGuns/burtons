@@ -15,13 +15,13 @@ export default function Financing() {
       <PageHeader
         eyebrow="Financing"
         title={'Comfort now.\nPay over time.'}
-        description="Financing options are available for qualifying projects. Contact us for current terms — we never quote financing details we can't stand behind."
+        description="Financing options are available for qualifying projects. Contact us for current terms. We never quote financing details we can't stand behind."
       />
       <FinancingSection />
       <Reveal className="max-w-2xl mx-auto px-6 pb-24 text-center">
         <p className="text-sm text-navy-900/50 leading-relaxed">
           Financing availability and terms vary by project and provider. For accurate, current information about
-          financing your installation or repair, call {BUSINESS.phone} — we&apos;ll walk you through the options
+          financing your installation or repair, call {BUSINESS.phone}, we&apos;ll walk you through the options
           during your free estimate.
         </p>
       </Reveal>

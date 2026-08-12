@@ -81,7 +81,7 @@ export default function HeroScene({ scrollRef, reduced, mobile, onReady }: Props
         <Particles count={mobile ? 120 : 350} reduced={reduced} />
 
         <Rig scrollRef={scrollRef} reduced={reduced} focusX={mobile ? 0 : 2.55} />
-        {/* Procedural environment — no external HDR fetch, fully offline. */}
+        {/* Procedural environment, no external HDR fetch, fully offline. */}
         <Environment resolution={64}>
           <Lightformer intensity={3.4} position={[0, 4, -2]} scale={[8, 3, 1]} color="#ffffff" />
           <Lightformer intensity={2} position={[-5, 1, 2]} rotation-y={Math.PI / 2} scale={[6, 2, 1]} color="#b7b4f6" />
