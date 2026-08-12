@@ -150,7 +150,7 @@ body::before {
   width: 100%;
   transform: scaleX(0);
   transform-origin: right;
-  background: linear-gradient(90deg, var(--color-royal-500), var(--color-royal-600));
+  background: linear-gradient(90deg, var(--color-brand-red-500), var(--color-royal-500));
   transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .nav-link:hover::after,

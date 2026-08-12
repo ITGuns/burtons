@@ -74,13 +74,13 @@ export default function HeroScene({ scrollRef, reduced, mobile, onReady }: Props
         <pointLight position={[3, -1, 3]} intensity={1} color="#fa8e94" distance={8} />
 
         {/* Composition: carousel sits right-of-center on desktop, centered on mobile */}
-        <group position={mobile ? [0, 0.8, 0] : [2.1, 0.2, 0]} scale={mobile ? 0.55 : 0.8}>
+        <group position={mobile ? [0, 0.8, 0] : [2.55, 0.2, 0]} scale={mobile ? 0.55 : 0.8}>
           <EquipmentCarousel reduced={reduced} />
           <HoloRings reduced={reduced} />
         </group>
         <Particles count={mobile ? 120 : 350} reduced={reduced} />
 
-        <Rig scrollRef={scrollRef} reduced={reduced} focusX={mobile ? 0 : 2.1} />
+        <Rig scrollRef={scrollRef} reduced={reduced} focusX={mobile ? 0 : 2.55} />
         {/* Procedural environment — no external HDR fetch, fully offline. */}
         <Environment resolution={64}>
           <Lightformer intensity={3.4} position={[0, 4, -2]} scale={[8, 3, 1]} color="#ffffff" />

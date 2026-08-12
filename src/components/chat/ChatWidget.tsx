@@ -97,7 +97,7 @@ export default function ChatWidget() {
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ delay: 0.2 }}
             onClick={() => setOpen(true)}
-            className="fixed bottom-6 right-6 z-[65] flex items-center gap-3 rounded-full bg-royal-500 hover:bg-royal-600 text-white pl-4 pr-5 py-3.5 shadow-[0_8px_32px_rgba(54,41,209,0.45)] transition-all hover:scale-105 cursor-pointer"
+            className="fixed bottom-6 right-6 z-[65] flex items-center gap-3 rounded-full bg-brand-red-500 hover:bg-brand-red-600 text-white pl-4 pr-5 py-3.5 shadow-[0_8px_32px_rgba(209,18,29,0.4)] transition-all hover:scale-105 cursor-pointer"
             aria-label="Open chat — Need HVAC help?"
           >
             <MessageCircle className="w-5 h-5" />

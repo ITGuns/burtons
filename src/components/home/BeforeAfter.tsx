@@ -147,7 +147,7 @@ export default function BeforeAfter() {
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading
           eyebrow="The difference"
-          title={'Before. After.\nBurton’s.'}
+          title={<>Before. After.{'\n'}<span className="text-brand-red-600">Burton&rsquo;s.</span></>}
           description="Drag the sliders to see what professional service does for a system — cleaner equipment, better airflow, lower bills."
         />
         <div className="grid md:grid-cols-2 gap-6">

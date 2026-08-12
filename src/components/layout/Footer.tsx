@@ -33,7 +33,7 @@ export default function Footer() {
         <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight text-navy-900 leading-[1.1]">
           Ready to keep your
           <span className="block">
-            comfort <span className="text-royal-600">running?</span>
+            comfort <span className="text-brand-red-600">running?</span>
           </span>
         </h2>
         <p className="mt-5 text-navy-900/55 max-w-lg mx-auto">

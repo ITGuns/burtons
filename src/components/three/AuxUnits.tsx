@@ -73,10 +73,12 @@ export function SmartThermostat() {
   const glass = useMemo(
     () =>
       new THREE.MeshStandardMaterial({
-        color: '#0e0c3d',
-        metalness: 0.55,
-        roughness: 0.14,
-        envMapIntensity: 1.6,
+        color: '#232a75',
+        metalness: 0.5,
+        roughness: 0.18,
+        envMapIntensity: 1.7,
+        emissive: '#3629d1',
+        emissiveIntensity: 0.22,
       }),
     [],
   )

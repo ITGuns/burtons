@@ -19,7 +19,7 @@ export default function TrustMetrics() {
               <p className="font-display text-4xl md:text-5xl font-light text-navy-900">
                 <AnimatedCounter value={m.value} />
               </p>
-              <p className="mt-3 font-display text-[11px] tracking-[0.22em] uppercase text-royal-600">
+              <p className="mt-3 font-display text-[11px] tracking-[0.22em] uppercase text-brand-red-600">
                 {m.label}
               </p>
             </div>

@@ -143,7 +143,7 @@ export default function Hero({ content }: { content: SiteContent }) {
         {/* Copy anchored bottom-left */}
         <div className="relative z-10 mt-auto p-7 sm:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-end gap-8 pointer-events-none">
           <div className="pointer-events-auto max-w-3xl">
-            <h1 className="font-display font-light text-white tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-[64px]">
+            <h1 className="font-display font-light text-white tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-[64px] [text-shadow:0_2px_28px_rgba(14,12,61,0.55)]">
               <span className="hero-line block">Engineered Comfort</span>
               <span className="hero-line block">
                 For Baton Rouge{' '}
@@ -174,8 +174,8 @@ export default function Hero({ content }: { content: SiteContent }) {
             href={BUSINESS.phoneHref}
             className="hero-cta pointer-events-auto lg:ml-auto glass-dark rounded-full px-5 py-3 inline-flex items-center gap-3 text-white hover:bg-white/20 transition-colors self-start lg:self-auto"
           >
-            <span className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center">
-              <Phone className="w-3.5 h-3.5" />
+            <span className="w-8 h-8 rounded-full bg-brand-red-500/30 flex items-center justify-center">
+              <Phone className="w-3.5 h-3.5 text-[#ffc2c5]" />
             </span>
             <span className="leading-tight">
               <span className="block text-[10px] uppercase tracking-[0.2em] text-white/60 font-display">24/7 emergencies</span>

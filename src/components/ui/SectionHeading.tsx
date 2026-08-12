@@ -20,10 +20,10 @@ export default function SectionHeading({ eyebrow, title, description, align = 'c
           className={cn(
             'font-display text-xs tracking-[0.18em] uppercase mb-5 flex items-center gap-2',
             align === 'center' && 'justify-center',
-            onDark ? 'text-white/80' : 'text-royal-600',
+            onDark ? 'text-white/80' : 'text-brand-red-600',
           )}
         >
-          <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
+          <Sparkles className={cn('w-3.5 h-3.5', onDark && 'text-[#fa8e94]')} aria-hidden="true" />
           {eyebrow}
         </p>
       )}

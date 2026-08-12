@@ -8,7 +8,10 @@ import { MiniSplit, SmartThermostat } from './AuxUnits'
 const SLOT_COUNT = 3
 const STEP = (Math.PI * 2) / SLOT_COUNT
 const HOLD_SECONDS = 5.5
-const RADIUS = 2.0
+// Narrow ellipse: depth swing is generous, side swing tight, so waiting units
+// tuck behind the featured one instead of drifting over the headline.
+const RADIUS_X = 0.9
+const RADIUS_Z = 2.0
 
 /**
  * Automatic 3D turntable: the three equipment types ride a circular track and
@@ -33,7 +36,7 @@ export default function EquipmentCarousel({ reduced }: { reduced: boolean }) {
       if (!g) return
       const a = angle.current + i * STEP
       const depth = Math.cos(a) // 1 = front, -1 = behind
-      g.position.set(Math.sin(a) * RADIUS, (depth - 1) * 0.22, depth * RADIUS * 0.75)
+      g.position.set(Math.sin(a) * RADIUS_X, (depth - 1) * 0.22, depth * RADIUS_Z)
       g.scale.setScalar(THREE.MathUtils.clamp(THREE.MathUtils.mapLinear(depth, -1, 1, 0.35, 1), 0.35, 1))
     })
   })
@@ -60,7 +63,7 @@ export default function EquipmentCarousel({ reduced }: { reduced: boolean }) {
       </group>
       <group ref={(el) => { slots.current[2] = el }}>
         <Float {...float}>
-          <group scale={2.1}>
+          <group scale={1.75}>
             <SmartThermostat />
           </group>
         </Float>

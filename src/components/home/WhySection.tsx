@@ -50,7 +50,7 @@ export default function WhySection() {
             <h2
               key={w}
               className={`why-word font-display font-light tracking-tight leading-[1.02] text-5xl sm:text-7xl lg:text-[92px] ${
-                i === 1 ? 'text-royal-600' : 'text-navy-900'
+                i === 1 ? 'text-brand-red-600' : 'text-navy-900'
               }`}
             >
               {w}
