@@ -17,8 +17,8 @@ export const SERVICES: ServiceDef[] = [
     short: 'Precision installs for full comfort systems.',
     headline: 'INSTALLED RIGHT. FROM DAY ONE.',
     description:
-      'A comfort system is only as good as its installation. We handle complete HVAC installations, equipment selection, sizing, placement, and clean professional workmanship, with transparent pricing and no surprises.',
-    bullets: ['Full system installation', 'Equipment consultation', 'Transparent pricing', 'Free estimates'],
+      'A comfort system is only as good as its installation. From furnace installations to package unit replacements, we do it all: equipment selection, sizing, placement, and clean professional workmanship. Get a free estimate on your air purifier, mini-split or furnace installation when you contact us today.',
+    bullets: ['Furnaces & evaporator coils', 'Mini-splits & package units', 'Humidifiers, dehumidifiers & air purifiers', 'Water heaters'],
     icon: 'Wrench',
   },
   {
@@ -37,8 +37,8 @@ export const SERVICES: ServiceDef[] = [
     short: 'Dependable warmth when temperatures drop.',
     headline: 'WARMTH YOU CAN COUNT ON.',
     description:
-      'When cold fronts move through Baton Rouge, your heating system needs to respond. We service, repair and maintain heating systems of all types for homes and businesses.',
-    bullets: ['Heating repair', 'System tune-ups', 'Safety checks', 'Residential & commercial'],
+      'When cold fronts move through Baton Rouge, your heating system needs to respond. We work with all types of HVAC units, including furnaces, heat pumps, straight cool systems and mini-splits, for homes and businesses alike.',
+    bullets: ['Furnaces & heat pumps', 'Straight cool systems & mini-splits', 'Repairs & tune-ups', 'Residential & commercial'],
     icon: 'Flame',
   },
   {
@@ -57,8 +57,8 @@ export const SERVICES: ServiceDef[] = [
     short: 'Stop breakdowns before they start.',
     headline: 'SMALL CHECKUPS. BIG SAVINGS.',
     description:
-      'Regular maintenance keeps your system efficient, extends equipment life, and catches small issues before they become expensive failures. We offer thorough preventive maintenance for all HVAC systems.',
-    bullets: ['Seasonal tune-ups', 'Filter & coil care', 'Performance checks', 'Extends system life'],
+      'Regular maintenance keeps your system efficient, extends equipment life, and catches small issues before they become expensive failures. We thoroughly clean the inside and outside of your system and check that every component is in good working order.',
+    bullets: ['Complete unit cleaning', 'Seasonal tune-ups', 'Filter & coil care', 'Extends system life'],
     icon: 'ShieldCheck',
   },
   {
@@ -97,9 +97,39 @@ export const SERVICES: ServiceDef[] = [
     short: 'Honest, lasting repairs for every system.',
     headline: 'FIXED RIGHT. PRICED FAIR.',
     description:
-      'From worn components to failed compressors, we repair heating and cooling systems of every type. You get an honest assessment, a clear price, and a repair that lasts.',
-    bullets: ['All makes & models', 'Honest assessments', 'Quality parts', 'Residential & commercial'],
+      'From worn components to failed compressors, we repair heating and cooling systems of every type. Consultations and diagnostic estimates are almost always free; if any extra charges apply, we let you know first.',
+    bullets: ['All makes & models', 'Free consultations & estimates', 'Quality parts', 'Residential & commercial'],
     icon: 'Settings2',
+  },
+  {
+    slug: 'ductwork',
+    title: 'Ductwork Cleaning & Repair',
+    short: 'Clean, sealed ducts for healthy airflow.',
+    headline: 'BETTER AIR STARTS IN THE DUCTS.',
+    description:
+      'Leaky or dirty ducts waste energy and spread dust through your home. We clean and repair ductwork so conditioned air gets exactly where it should, efficiently and cleanly.',
+    bullets: ['Duct cleaning', 'Duct repair & sealing', 'Improved airflow', 'Healthier indoor air'],
+    icon: 'Wind',
+  },
+  {
+    slug: 'indoor-air-quality',
+    title: 'Indoor Air Quality',
+    short: 'Humidifiers, dehumidifiers and air purifiers.',
+    headline: 'BREATHE EASIER AT HOME.',
+    description:
+      'Louisiana humidity is hard on homes and lungs. We install, clean and maintain air quality systems, including humidifiers, dehumidifiers and air purifiers, matched to your home and your needs.',
+    bullets: ['Air purifiers', 'Humidifiers & dehumidifiers', 'Cleaning & maintenance', 'Free estimates'],
+    icon: 'Leaf',
+  },
+  {
+    slug: 'drain-cleaning',
+    title: 'Drain Cleaning & Plumbing Repairs',
+    short: 'Twice-a-year drain care and dependable fixes.',
+    headline: 'CLEAR DRAINS. NO SURPRISES.',
+    description:
+      'Beyond HVAC, we keep water moving too. Routine drain cleaning twice a year prevents clogs, protects your pipes and property, reduces odors and keeps slow drains flowing. We also handle the repairs that come with them.',
+    bullets: ['Clogged drains & leaky fixtures', 'Gas, water & sewer lines', 'Water heaters & sump pumps', 'Preventive drain cleaning'],
+    icon: 'Droplets',
   },
 ]
 

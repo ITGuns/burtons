@@ -4,7 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 import {
   Building2, Wrench, Snowflake, Flame, ThermometerSun,
   ShieldCheck, CloudSnow, Siren, Gauge, Settings2,
-  ChevronLeft, ChevronRight, ArrowRight, ArrowLeft, Sparkles,
+  ChevronLeft, ChevronRight, ArrowRight, ArrowLeft,
+  Wind, Leaf, Droplets,
 } from 'lucide-react'
 import Button from '../ui/Button'
 import { SERVICES } from '../../data/services'
@@ -14,6 +15,7 @@ import { cn } from '../../lib/utils'
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Building2, Wrench, Snowflake, Flame, ThermometerSun,
   ShieldCheck, CloudSnow, Siren, Gauge, Settings2,
+  Wind, Leaf, Droplets,
 }
 
 /** Soft gradient palettes cycled across the circular showcase items. */
@@ -65,14 +67,10 @@ export default function ServicesShowcase() {
         {/* Header row */}
         <div className="grid grid-cols-3 items-start mb-10">
           <p className="font-display text-xs tracking-[0.18em] uppercase text-navy-900/50 flex items-center gap-2 pt-3">
-            <Sparkles className="w-3.5 h-3.5 text-royal-600" /> Services
+            Services
           </p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] font-light text-navy-900 text-center leading-[1.15] col-span-3 sm:col-span-1">
-            Our{' '}
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-electric-300 to-royal-500 align-middle mx-1">
-              <Sparkles className="w-4 h-4 text-white" />
-            </span>{' '}
-            Popular
+            Our Popular
             <span className="block">Services</span>
           </h2>
           <Link

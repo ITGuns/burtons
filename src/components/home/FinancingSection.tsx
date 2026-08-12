@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CreditCard, PhoneCall, FileCheck, Sparkles } from 'lucide-react'
+import { CreditCard, PhoneCall, FileCheck } from 'lucide-react'
 import Reveal from '../ui/Reveal'
 import Button from '../ui/Button'
 import { BUSINESS } from '../../lib/constants'
@@ -12,7 +12,7 @@ export default function FinancingSection() {
         <div className="hero-panel relative overflow-hidden rounded-[28px] p-8 sm:p-14 grid lg:grid-cols-2 gap-12 items-center">
           <Reveal>
             <p className="font-display text-xs tracking-[0.18em] uppercase text-white/70 mb-5 flex items-center gap-2">
-              <Sparkles className="w-3.5 h-3.5" /> Financing
+              Financing
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-light tracking-tight leading-[1.1] text-white">
               Comfort now.

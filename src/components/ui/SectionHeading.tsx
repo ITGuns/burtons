@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react'
-import { Sparkles } from 'lucide-react'
 import Reveal from './Reveal'
 import { cn } from '../../lib/utils'
 
@@ -23,7 +22,6 @@ export default function SectionHeading({ eyebrow, title, description, align = 'c
             onDark ? 'text-white/80' : 'text-brand-red-600',
           )}
         >
-          <Sparkles className={cn('w-3.5 h-3.5', onDark && 'text-[#fa8e94]')} aria-hidden="true" />
           {eyebrow}
         </p>
       )}

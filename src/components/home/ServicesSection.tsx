@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import {
   Building2, Wrench, Snowflake, Flame, ThermometerSun,
   ShieldCheck, CloudSnow, Siren, Gauge, Settings2, ArrowRight,
+  Wind, Leaf, Droplets,
 } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import Button from '../ui/Button'
@@ -15,6 +16,7 @@ import { cn } from '../../lib/utils'
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Building2, Wrench, Snowflake, Flame, ThermometerSun,
   ShieldCheck, CloudSnow, Siren, Gauge, Settings2,
+  Wind, Leaf, Droplets,
 }
 
 export default function ServicesSection() {
