@@ -1,4 +1,4 @@
-@import '@fontsource/ultra';
+@import '@fontsource-variable/fraunces';
 @import '@fontsource/poppins/300.css';
 @import '@fontsource/poppins/400.css';
 @import '@fontsource/poppins/500.css';
@@ -26,8 +26,8 @@
 
   --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   --font-body: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
-  /* Logo-style display face: Cooper-style heavy serif matching the "Reliable" wordmark */
-  --font-logo: 'Ultra', 'Bookman Old Style', serif;
+  /* Display serif for hero headlines: soft terminals echo the logo wordmark */
+  --font-logo: 'Fraunces Variable', 'Fraunces', Georgia, serif;
 
   --animate-spin-slow: spin 14s linear infinite;
   --animate-pulse-ring: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;

@@ -61,18 +61,14 @@ export default function Hero({ content }: { content: SiteContent }) {
           <div className="absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full bg-brand-red-600/20 blur-[130px]" aria-hidden="true" />
         </div>
 
-        {/* Headline phrase riding high, over the dark garage backdrop */}
-        <div className="relative z-10 px-7 sm:px-12 lg:px-14 pt-32 sm:pt-40 lg:pt-44 pointer-events-none">
-          <h1 className="font-logo font-normal text-white leading-[1.14] text-3xl sm:text-[42px] lg:text-[54px] [text-shadow:0_2px_28px_rgba(14,12,61,0.6)]">
-            <span className="hero-line block">Engineered Comfort</span>
-            <span className="hero-line block">For Baton Rouge</span>
-          </h1>
-        </div>
-
-        {/* Chip, description and CTAs anchored bottom-left as before */}
+        {/* Copy anchored bottom-left */}
         <div className="relative z-10 mt-auto p-7 sm:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-end gap-8 pointer-events-none">
           <div className="pointer-events-auto max-w-3xl">
-            <span className="hero-sub inline-flex items-center border border-white/50 rounded-full px-5 sm:px-7 py-1.5 font-display text-sm sm:text-base text-white glass-dark">
+            <h1 className="font-logo font-semibold text-white tracking-[-0.015em] leading-[1.1] text-[34px] sm:text-5xl lg:text-[58px] [text-shadow:0_2px_30px_rgba(14,12,61,0.55)]">
+              <span className="hero-line block">Engineered Comfort</span>
+              <span className="hero-line block">For Baton Rouge</span>
+            </h1>
+            <span className="hero-sub mt-5 inline-flex items-center border border-white/50 rounded-full px-5 sm:px-7 py-1.5 font-display text-sm sm:text-base text-white glass-dark">
               HVAC Experts
             </span>
             <p className="hero-sub mt-5 text-white/75 text-base sm:text-lg max-w-xl leading-relaxed">
