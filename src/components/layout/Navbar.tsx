@@ -17,8 +17,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const openBooking = useStore((s) => s.openBooking)
   const location = useLocation()
-  const onHome = location.pathname === '/'
-  const overHero = onHome && !scrolled
+  // Every page opens with a dark panel (home hero / interior PageHeader),
+  // so the pill goes dark-glass at the top and light-glass once scrolled.
+  const overHero = !scrolled
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -48,14 +49,15 @@ export default function Navbar() {
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed top-0 inset-x-0 z-50 px-3 sm:px-6"
+        className="fixed top-0 inset-x-0 z-50 px-3 sm:px-6 pt-3 sm:pt-4"
       >
+        {/* Cornerless floating pill: dark glass over the hero/page header, light once scrolled */}
         <div
           className={cn(
-            'mx-auto max-w-6xl grid grid-cols-[1fr_auto_1fr] items-center gap-4 transition-all duration-500 px-5',
-            scrolled
-              ? 'glass-light rounded-full mt-3 py-2.5 shadow-[0_16px_40px_-20px_rgba(14,12,61,0.35)]'
-              : 'py-5 mt-2',
+            'mx-auto max-w-6xl grid grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-full px-5 sm:px-6 py-2.5 transition-all duration-500',
+            overHero
+              ? 'glass-dark shadow-[0_18px_48px_-24px_rgba(0,0,0,0.5)]'
+              : 'glass-light shadow-[0_16px_40px_-20px_rgba(14,12,61,0.35)]',
           )}
         >
           {/* Left: links (desktop) / hamburger (mobile) */}
