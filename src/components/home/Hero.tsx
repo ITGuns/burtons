@@ -44,27 +44,27 @@ export default function Hero({ content }: { content: SiteContent }) {
           <img
             ref={(el) => { if (el?.complete) setPhotoReady(true) }}
             src="/images/hero-fleet.jpg"
-            alt="Burton's Reliable service trucks and equipment trailer at a Baton Rouge home"
+            alt="Burton's Reliable wrapped service truck and equipment trailer"
             fetchPriority="high"
             decoding="async"
             onLoad={() => setPhotoReady(true)}
-            className={`hero-kenburns absolute inset-0 w-full h-full object-cover object-[65%_58%] [filter:saturate(1.18)_contrast(1.06)_brightness(1.03)] transition-opacity duration-1000 ${
+            className={`hero-kenburns absolute inset-0 w-full h-full object-cover object-[52%_62%] [filter:saturate(1.06)_contrast(1.04)] transition-opacity duration-1000 ${
               photoReady ? 'opacity-100' : 'opacity-0'
             }`}
           />
           {/* Brand grade: indigo wash, left text scrim, top nav scrim, bottom scrim */}
-          <div className="absolute inset-0 bg-[#1e15aa]/[0.10] mix-blend-multiply" aria-hidden="true" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c3d]/70 via-[#171082]/25 to-transparent" aria-hidden="true" />
-          <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-[#0e0c3d]/70 to-transparent" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[#1e15aa]/[0.08] mix-blend-multiply" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c3d]/65 via-[#171082]/20 to-transparent" aria-hidden="true" />
+          <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-[#0e0c3d]/55 to-transparent" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-[#0e0c3d]/80 via-[#0e0c3d]/35 to-transparent" aria-hidden="true" />
           {/* Faint flame glow echoing the logo */}
           <div className="absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full bg-brand-red-600/20 blur-[130px]" aria-hidden="true" />
         </div>
 
-        {/* Copy anchored bottom-left */}
-        <div className="relative z-10 mt-auto p-7 sm:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-end gap-8 pointer-events-none">
+        {/* Copy raised to the vertical center */}
+        <div className="relative z-10 my-auto p-7 sm:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-end gap-8 pointer-events-none">
           <div className="pointer-events-auto max-w-3xl">
-            <h1 className="font-display font-light text-white tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-[64px] [text-shadow:0_2px_28px_rgba(14,12,61,0.55)]">
+            <h1 className="font-logo font-normal text-white leading-[1.14] text-3xl sm:text-[42px] lg:text-[54px] [text-shadow:0_2px_28px_rgba(14,12,61,0.6)]">
               <span className="hero-line block">Engineered Comfort</span>
               <span className="hero-line block">
                 For Baton Rouge{' '}
