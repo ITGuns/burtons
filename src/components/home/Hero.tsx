@@ -61,18 +61,20 @@ export default function Hero({ content }: { content: SiteContent }) {
           <div className="absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full bg-brand-red-600/20 blur-[130px]" aria-hidden="true" />
         </div>
 
-        {/* Copy raised to the vertical center */}
-        <div className="relative z-10 my-auto p-7 sm:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-end gap-8 pointer-events-none">
+        {/* Headline phrase riding high, over the dark garage backdrop */}
+        <div className="relative z-10 px-7 sm:px-12 lg:px-14 pt-32 sm:pt-40 lg:pt-44 pointer-events-none">
+          <h1 className="font-logo font-normal text-white leading-[1.14] text-3xl sm:text-[42px] lg:text-[54px] [text-shadow:0_2px_28px_rgba(14,12,61,0.6)]">
+            <span className="hero-line block">Engineered Comfort</span>
+            <span className="hero-line block">For Baton Rouge</span>
+          </h1>
+        </div>
+
+        {/* Chip, description and CTAs anchored bottom-left as before */}
+        <div className="relative z-10 mt-auto p-7 sm:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-end gap-8 pointer-events-none">
           <div className="pointer-events-auto max-w-3xl">
-            <h1 className="font-logo font-normal text-white leading-[1.14] text-3xl sm:text-[42px] lg:text-[54px] [text-shadow:0_2px_28px_rgba(14,12,61,0.6)]">
-              <span className="hero-line block">Engineered Comfort</span>
-              <span className="hero-line block">
-                For Baton Rouge{' '}
-                <span className="inline-flex items-center align-middle border border-white/50 rounded-full px-5 sm:px-7 py-1 sm:py-1.5 text-[0.55em] font-normal glass-dark">
-                  HVAC Experts
-                </span>
-              </span>
-            </h1>
+            <span className="hero-sub inline-flex items-center border border-white/50 rounded-full px-5 sm:px-7 py-1.5 font-display text-sm sm:text-base text-white glass-dark">
+              HVAC Experts
+            </span>
             <p className="hero-sub mt-5 text-white/75 text-base sm:text-lg max-w-xl leading-relaxed">
               {content.hero_description}
             </p>
